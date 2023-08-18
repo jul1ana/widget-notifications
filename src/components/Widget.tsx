@@ -26,10 +26,11 @@ export function Widget() {
             <Notification.Actions />
           </Notification.Root>
 
-          {/* <Notification
-            icon={Rocket}
-            text="Você recebeu um convite para fazer parte da empresa NewRocket."
-          /> */}
+          <Notification.Root>
+            <Notification.Icon icon={Rocket} />
+            <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
+            <Notification.Actions />
+          </Notification.Root>
         </div>
       </div>
 
@@ -40,15 +41,17 @@ export function Widget() {
         </div>
 
         <div className="divide-y-2 divide-zinc-300 dark:divide-zinc-950">
-          {/* <Notification
-            icon={Rocket}
-            text="Você recebeu um convite para fazer parte da empresa NewRocket."
-          /> */}
+          <Notification.Root>
+            <Notification.Icon icon={Rocket} />
+            <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
+            <Notification.Actions />
+          </Notification.Root>
 
-          {/* <Notification
-            icon={Rocket}
-            text="Você recebeu um convite para fazer parte da empresa NewRocket."
-          /> */}
+          <Notification.Root>
+            <Notification.Icon icon={Rocket} />
+            <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
+            <Notification.Actions />
+          </Notification.Root>
         </div>
       </div>
     </div>
