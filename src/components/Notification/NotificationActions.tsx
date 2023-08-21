@@ -1,20 +1,9 @@
-import { Check, X } from "lucide-react";
+import { ReactNode } from "react";
 
 interface NotificationActionsProps {
-  // onCancelAction: () => void;
-  // onSubmitAction: () => void;
+  children: ReactNode;
 }
 
-export function NotificationActions({}: NotificationActionsProps) {
-  return (
-    <div className="flex self-center gap-2">
-      <button className="w-8 h-8 rounded flex items-center justify-center bg-zinc-400 hover:bg-zinc-500 dark:bg-zinc-800 dark:hover:bg-zinc-700">
-        <X className="w-4 h-4 text-zinc-50" />
-      </button>
-
-      <button className="w-8 h-8 rounded flex items-center justify-center bg-violet-500 hover:bg-violet-600">
-        <Check className="w-4 h-4 text-zinc-50" />
-      </button>
-    </div>
-  );
+export function NotificationActions({ children }: NotificationActionsProps) {
+  return <div className="flex self-center gap-2">{children}</div>;
 }

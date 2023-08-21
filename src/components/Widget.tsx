@@ -1,3 +1,5 @@
+"use client";
+
 import { Rocket, X, Check } from "lucide-react";
 import { Notification } from "./Notification";
 
@@ -23,13 +25,22 @@ export function Widget() {
           <Notification.Root>
             <Notification.Icon icon={Rocket} />
             <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
-            <Notification.Actions />
+            <Notification.Actions>
+              <Notification.Action onClick={() => {}} icon={X} />
+              <Notification.Action
+                onClick={() => {}}
+                icon={Check}
+                className="bg-violet-500 hover:bg-violet-600 dark:bg-violet-500 dark:hover:bg-violet-600"
+              />
+            </Notification.Actions>
           </Notification.Root>
 
           <Notification.Root>
             <Notification.Icon icon={Rocket} />
             <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
-            <Notification.Actions />
+            <Notification.Actions>
+              <Notification.Action onClick={() => {}} icon={Check} />
+            </Notification.Actions>
           </Notification.Root>
         </div>
       </div>
@@ -44,13 +55,17 @@ export function Widget() {
           <Notification.Root>
             <Notification.Icon icon={Rocket} />
             <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
-            <Notification.Actions />
+            <Notification.Actions>
+              <Notification.Action onClick={() => {}} icon={X} />
+            </Notification.Actions>
           </Notification.Root>
 
           <Notification.Root>
             <Notification.Icon icon={Rocket} />
             <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
-            <Notification.Actions />
+            <Notification.Actions>
+              <Notification.Action onClick={() => {}} icon={Check} />
+            </Notification.Actions>
           </Notification.Root>
         </div>
       </div>
