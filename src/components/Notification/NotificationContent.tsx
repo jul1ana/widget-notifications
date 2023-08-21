@@ -10,8 +10,8 @@ export function NotificationContent({ text }: NotificationContentProps) {
       </p>
 
       <div className="flex items-center gap-1 text-xxs text-zinc-400">
-        <span>Convite</span>
-        <span>Há 3 min</span>
+        <span>Feed - </span>
+        <span>Há 4 min</span>
       </div>
     </div>
   );

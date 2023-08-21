@@ -1,6 +1,6 @@
 "use client";
 
-import { Rocket, X, Check } from "lucide-react";
+import { Rocket, X, Check, Luggage, Heart, Users } from "lucide-react";
 import { Notification } from "./Notification";
 
 export function Widget() {
@@ -10,7 +10,7 @@ export function Widget() {
       <div className="py-4 px-6 flex items-center justify-between bg-zinc-200 dark:bg-zinc-800">
         <span className="font-bold">Notificações</span>
 
-        <button className="font-bold text-xs text-violet-500 hover:text-violet-400">
+        <button className="font-bold text-xs text-emerald-500 hover:text-emerald-400">
           MARCAR TODAS COMO VISTAS
         </button>
       </div>
@@ -24,22 +24,19 @@ export function Widget() {
         <div className="divide-y-2 divide-zinc-300 dark:divide-zinc-950">
           <Notification.Root>
             <Notification.Icon icon={Rocket} />
+            <Notification.Content text="Um novo conteúdo do Desenvolvedor Alask foi publicado no FeeDev! Vem dar uma olhada!" />
+          </Notification.Root>
+
+          <Notification.Root>
+            <Notification.Icon icon={Luggage} />
             <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
             <Notification.Actions>
               <Notification.Action onClick={() => {}} icon={X} />
               <Notification.Action
                 onClick={() => {}}
                 icon={Check}
-                className="bg-violet-500 hover:bg-violet-600 dark:bg-violet-500 dark:hover:bg-violet-600"
+                className="bg-emerald-500 hover:bg-emerald-600 dark:bg-emerald-500 dark:hover:bg-emerald-600"
               />
-            </Notification.Actions>
-          </Notification.Root>
-
-          <Notification.Root>
-            <Notification.Icon icon={Rocket} />
-            <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
-            <Notification.Actions>
-              <Notification.Action onClick={() => {}} icon={Check} />
             </Notification.Actions>
           </Notification.Root>
         </div>
@@ -53,18 +50,22 @@ export function Widget() {
 
         <div className="divide-y-2 divide-zinc-300 dark:divide-zinc-950">
           <Notification.Root>
-            <Notification.Icon icon={Rocket} />
-            <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
+            <Notification.Icon icon={Heart} />
+            <Notification.Content text="Juliana Silva e mais 3 pessoas gostaram do seu post no FeeDev." />
             <Notification.Actions>
               <Notification.Action onClick={() => {}} icon={X} />
             </Notification.Actions>
           </Notification.Root>
 
           <Notification.Root>
-            <Notification.Icon icon={Rocket} />
-            <Notification.Content text="Você recebeu um convite para fazer parte da empresa NewRocket." />
+            <Notification.Icon icon={Users} />
+            <Notification.Content text="Você foi mencionado no tópico de Desenvolvimento em TypeScript para voluntários" />
             <Notification.Actions>
-              <Notification.Action onClick={() => {}} icon={Check} />
+              <Notification.Action
+                onClick={() => {}}
+                icon={Check}
+                className="bg-emerald-500 hover:bg-emerald-600 dark:bg-emerald-500 dark:hover:bg-emerald-600"
+              />
             </Notification.Actions>
           </Notification.Root>
         </div>
